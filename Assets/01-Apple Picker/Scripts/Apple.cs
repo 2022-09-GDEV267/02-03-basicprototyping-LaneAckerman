@@ -31,6 +31,8 @@ public class Apple : MonoBehaviour
 
             apScript.AppleDestroyed();
 
+            apScript.AppleSpecialDestroyed();
+
         }
 
     }

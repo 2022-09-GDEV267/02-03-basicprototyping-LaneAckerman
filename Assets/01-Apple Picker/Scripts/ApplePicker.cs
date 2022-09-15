@@ -85,4 +85,48 @@ public class ApplePicker : MonoBehaviour
         }
 
     }
+
+    public void AppleSpecialDestroyed()
+    {
+
+        // Destroy all of the falling apples
+
+        GameObject[] tAppleSpecialArray = GameObject.FindGameObjectsWithTag("AppleSpecial");
+
+        foreach (GameObject tGO in tAppleSpecialArray)
+        {
+
+            Destroy(tGO);
+
+        }
+
+        /*
+        // Destroy one of the baskets                                      
+
+        // Get the index of the last Basket in basketList
+
+        int basketIndex = basketList.Count - 1;
+
+        // Get a reference to that Basket GameObject
+
+        GameObject tBasketGO = basketList[basketIndex];
+
+        // Remove the Basket from the list and destroy the GameObject
+
+        basketList.RemoveAt(basketIndex);
+
+        Destroy(tBasketGO);
+
+        // If there are no Baskets left, restart the game
+
+        if (basketList.Count == 0)
+        {
+
+            SceneManager.LoadScene("_Scene_0");
+
+
+        }
+        */
+
+    }
 }
