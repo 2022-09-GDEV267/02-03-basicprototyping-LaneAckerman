@@ -14,6 +14,11 @@ public class AppleTree : MonoBehaviour
     public GameObject applePrefab;
 
 
+    // Prefab for instantiating special apples
+
+    public GameObject appleSpecialPrefab;
+
+
 
     // Speed at which the AppleTree moves
 
@@ -36,6 +41,10 @@ public class AppleTree : MonoBehaviour
     // Rate at which Apples will be instantiated
 
     public float secondsBetweenAppleDrops = 1f;
+
+    // Chance to drop AppleSpecial
+
+    public float chanceForSpecialDrop = 0.01f;
 
 
 
@@ -61,6 +70,17 @@ public class AppleTree : MonoBehaviour
 
     }
 
+
+    void DropAppleSpecial()
+    {
+
+        GameObject appleSpecial = Instantiate<GameObject>(appleSpecialPrefab);
+
+        appleSpecial.transform.position = transform.position;
+
+        //Invoke("DropApple", secondsBetweenAppleDrops);
+
+    }
 
 
     void Update()
@@ -102,6 +122,11 @@ public class AppleTree : MonoBehaviour
 
             speed *= -1; // Change direction
 
+        }
+
+        if (Random.value < chanceForSpecialDrop)
+        {
+            Invoke("DropAppleSpecial", 2f);
         }
 
     }
