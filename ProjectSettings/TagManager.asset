@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Apple
   - AppleSpecial
+  - Projectile
   layers:
   - Default
   - TransparentFX
