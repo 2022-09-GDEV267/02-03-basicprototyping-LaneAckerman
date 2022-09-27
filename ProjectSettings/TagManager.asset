@@ -7,6 +7,9 @@ TagManager:
   - Apple
   - AppleSpecial
   - Projectile
+  - PoolBall
+  - 8-Ball
+  - Cue
   layers:
   - Default
   - TransparentFX
