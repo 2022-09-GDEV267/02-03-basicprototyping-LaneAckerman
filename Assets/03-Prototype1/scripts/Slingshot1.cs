@@ -16,6 +16,7 @@ public class Slingshot1 : MonoBehaviour
 
     public float velocityMult = 8f;
 
+    bool isSet = true;
 
 
     // fields set dynamically
@@ -59,6 +60,8 @@ public class Slingshot1 : MonoBehaviour
 
         launchPos = launchPointTrans.position;
 
+        cueRigidbody = cue.GetComponent<Rigidbody>();
+
     }
 
 
@@ -84,25 +87,35 @@ public class Slingshot1 : MonoBehaviour
     }
 
     void OnMouseDown()
-    {                                                   
+    {
+        if (isSet == true)
+        {
 
-        // The player has pressed the mouse button while over Slingshot
+            // The player has pressed the mouse button while over Slingshot
 
-        aimingMode = true;
+            aimingMode = true;
 
-        // Instantiate a Projectile
+            // Instantiate a Projectile
 
-        //projectile = cue;
+            //projectile = cue;
 
-        // Start it at the launchPoint
+            // Start it at the launchPoint
 
-        cue.transform.position = launchPos;
+            //cue.transform.position = launchPos;
 
-        // Set it to isKinematic for now
+            // Set it to isKinematic for now
 
-        cueRigidbody = cue.GetComponent<Rigidbody>();               
+            //cueRigidbody = cue.GetComponent<Rigidbody>();
 
-        cueRigidbody.isKinematic = true;
+            cueRigidbody.isKinematic = true;
+        }
+
+        else
+        {
+            return;
+        }
+   
+
 
     }
 
@@ -141,15 +154,23 @@ public class Slingshot1 : MonoBehaviour
             mouseDelta *= maxMagnitude;
 
         }
+         if (Mathf.Approximately(cueRigidbody.velocity.x, 0) && Mathf.Approximately(cueRigidbody.velocity.z, 0))
+        {
+            isSet = true;
+        }
 
+        else
+        {
+            isSet = false;
+        }
 
 
 
         // Move the projectile to this new position
 
-        Vector3 projPos = launchPos + mouseDelta;
+        //Vector3 projPos = launchPos + mouseDelta;
 
-        cue.transform.position = projPos;
+        //cue.transform.position = projPos;
 
 
 
@@ -164,13 +185,13 @@ public class Slingshot1 : MonoBehaviour
 
             cueRigidbody.velocity = -mouseDelta * velocityMult;
 
-            FollowCam.POI = cue;
+            //FollowCam.POI = cue;
 
-            cue = null;
+            //cue = null;
 
-            MissionDemolition.ShotFired();                             
+            //MissionDemolition.ShotFired();                             
 
-            ProjectileLine.S.poi = cue;
+            ProjectileLine1.S.poi = cue;
 
         }
 
