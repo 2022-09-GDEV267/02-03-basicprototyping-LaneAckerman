@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 97
+  controlID: 57
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 98
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 99
+  controlID: 18
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,9 +399,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 244c0000
-      m_LastClickedID: 19492
-      m_ExpandedIDs: a860ffff8469ffffd6a1ffff28d2ffff40f0ffff38fbffff244c0000
+      m_SelectedIDs: 7e1affff
+      m_LastClickedID: -58754
+      m_ExpandedIDs: 722dffff5a2effff0439ffff0a77ffff0478fffff683ffff4287ffffc8edffffecefffffaef6ffff30fbffffd4530000425400006c5400000a59000052590000a0590000b6590000c4730000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -650,9 +650,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.97792697, y: 0.9266178, z: -10.010571}
+    m_Target: {x: 13.528947, y: 6.7144055, z: -16.468273}
     speed: 2
-    m_Value: {x: 0.97792697, y: 0.9266178, z: -10.010571}
+    m_Value: {x: 13.528947, y: 6.7144055, z: -16.468273}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -699,13 +699,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0044972734, y: -0.020402038, z: 0.000114112096, w: -0.99973977}
+    m_Target: {x: 0.11619746, y: -0.09457441, z: 0.01105559, w: 0.9885899}
     speed: 2
-    m_Value: {x: -0.004497462, y: -0.020402895, z: 0.00011411688, w: -0.9997817}
+    m_Value: {x: 0.11620453, y: -0.094580166, z: 0.011056262, w: 0.98865}
   m_Size:
-    m_Target: 12.542187
+    m_Target: 6.408673
     speed: 2
-    m_Value: 12.542187
+    m_Value: 6.408673
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -771,22 +771,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/02-Mission Demolition/Prefabs
+    - Assets/03-Prototype1/prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/02-Mission Demolition/Prefabs
+  - Assets/03-Prototype1/prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lacke\OneDrive\Documents\GitHub\02-03-basicprototyping-LaneAckerman
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 120}
-    m_SelectedIDs: 604d0000
-    m_LastClickedID: 19808
-    m_ExpandedIDs: 00000000384d0000404d000000ca9a3bffffff7f
+    m_SelectedIDs: 2c520000
+    m_LastClickedID: 21036
+    m_ExpandedIDs: 00000000c4510000e6510000e8510000ea51000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,7 +814,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000384d0000
+    m_ExpandedIDs: 00000000c4510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
