@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class Pocket : MonoBehaviour
 {
 	static public bool 	goalMet = false;
-    //public Text scoreGT;
-    public GameObject scoreGo;
+    public Text scorePool;
+    //public GameObject scoreGo;
 
     
     // Start is called before the first frame update
     void Start()
     {
-        //GameObject scoreGO = GameObject.Find("ScoreCounter");
+        GameObject scoreGO = GameObject.Find("ScoreCounter");
 
         
     }
@@ -41,7 +41,15 @@ public class Pocket : MonoBehaviour
             //mat.color = c;
 
 
-            scoreGo.GetComponent<ScoreIncrease>().ScoreUp();
+            int score = int.Parse(scorePool.text);
+
+            // Add points for catching the apple
+
+            score += 1;
+
+            // Convert the score back to a string and display it
+
+            scorePool.text = score.ToString();
 
         }
     }

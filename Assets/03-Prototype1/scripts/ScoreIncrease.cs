@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreIncrease : MonoBehaviour
 {
 
-    public Text scoreGT;
+    public Text scorePool;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +15,11 @@ public class ScoreIncrease : MonoBehaviour
 
         // Get the Text Component of that GameObject
 
-        scoreGT = scoreGO.GetComponent<Text>();
+        scorePool = scoreGO.GetComponent<Text>();
 
         // Set the starting number of points to 0
 
-        scoreGT.text = "0";
+        scorePool.text = "0";
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class ScoreIncrease : MonoBehaviour
 
     public void ScoreUp()
     {
-        int score = int.Parse(scoreGT.text);
+        int score = int.Parse(scorePool.text);
 
         // Add points for catching the apple
 
@@ -38,6 +38,6 @@ public class ScoreIncrease : MonoBehaviour
 
         // Convert the score back to a string and display it
 
-        scoreGT.text = score.ToString();
+        scorePool.text = score.ToString();
     }
 }

@@ -232,10 +232,9 @@ GameObject:
   - component: {fileID: 342315717}
   - component: {fileID: 342315716}
   - component: {fileID: 342315715}
-  - component: {fileID: 342315719}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Pocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,7 +248,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 342315714}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -319,19 +318,6 @@ Transform:
   m_Father: {fileID: 1590535782}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &342315719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342315714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2419f456f878032419b50f2eb8dd3d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreGT: {fileID: 562610884}
 --- !u!1 &438075013
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,10 +330,9 @@ GameObject:
   - component: {fileID: 438075016}
   - component: {fileID: 438075015}
   - component: {fileID: 438075014}
-  - component: {fileID: 438075018}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Pocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,7 +346,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 438075013}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -431,19 +416,6 @@ Transform:
   m_Father: {fileID: 1590535782}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &438075018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438075013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2419f456f878032419b50f2eb8dd3d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreGT: {fileID: 562610884}
 --- !u!1001 &562610883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -541,9 +513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3593548425856931819, guid: 6f26e3b807c033a409448536254d1071, type: 3}
       propertyPath: m_Text
-      value: '0
-
-'
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3593548425856931819, guid: 6f26e3b807c033a409448536254d1071, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -852,10 +822,9 @@ GameObject:
   - component: {fileID: 964796722}
   - component: {fileID: 964796721}
   - component: {fileID: 964796720}
-  - component: {fileID: 964796724}
   m_Layer: 0
   m_Name: Cylinder (4)
-  m_TagString: Untagged
+  m_TagString: Pocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -869,7 +838,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 964796719}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -939,19 +908,6 @@ Transform:
   m_Father: {fileID: 1590535782}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &964796724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964796719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2419f456f878032419b50f2eb8dd3d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreGT: {fileID: 562610884}
 --- !u!1 &1366900550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,9 +1108,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1590535782}
+  - component: {fileID: 1590535789}
+  - component: {fileID: 1590535788}
+  - component: {fileID: 1590535787}
+  - component: {fileID: 1590535786}
+  - component: {fileID: 1590535785}
+  - component: {fileID: 1590535784}
+  - component: {fileID: 1590535783}
   m_Layer: 0
   m_Name: Pockets
-  m_TagString: Untagged
+  m_TagString: Pocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1180,6 +1143,103 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590535783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590535781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2419f456f878032419b50f2eb8dd3d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePool: {fileID: 562610884}
+--- !u!136 &1590535784
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590535781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: -28.52, y: 1.5, z: 29.22}
+--- !u!136 &1590535785
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590535781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: -28.52, y: 1.5, z: -0.00000008940697}
+--- !u!136 &1590535786
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590535781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: -28.52, y: 1.5, z: -29.22}
+--- !u!136 &1590535787
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590535781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 1.5, z: -0.00000008940697}
+--- !u!136 &1590535788
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590535781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 1.5, z: 29.22}
+--- !u!136 &1590535789
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590535781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 1.5, z: -29.22}
 --- !u!1 &1669354984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,10 +1252,9 @@ GameObject:
   - component: {fileID: 1669354987}
   - component: {fileID: 1669354986}
   - component: {fileID: 1669354985}
-  - component: {fileID: 1669354989}
   m_Layer: 0
   m_Name: Cylinder (3)
-  m_TagString: Untagged
+  m_TagString: Pocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1209,7 +1268,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1669354984}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -1279,19 +1338,6 @@ Transform:
   m_Father: {fileID: 1590535782}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1669354989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669354984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2419f456f878032419b50f2eb8dd3d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreGT: {fileID: 562610884}
 --- !u!1 &1680029560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,10 +1350,9 @@ GameObject:
   - component: {fileID: 1680029563}
   - component: {fileID: 1680029562}
   - component: {fileID: 1680029561}
-  - component: {fileID: 1680029565}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: Pocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1321,7 +1366,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1680029560}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -1391,19 +1436,6 @@ Transform:
   m_Father: {fileID: 1590535782}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1680029565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680029560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2419f456f878032419b50f2eb8dd3d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreGT: {fileID: 562610884}
 --- !u!1 &1794901381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,10 +1448,9 @@ GameObject:
   - component: {fileID: 1794901384}
   - component: {fileID: 1794901383}
   - component: {fileID: 1794901382}
-  - component: {fileID: 1794901387}
   m_Layer: 0
   m_Name: Cylinder (5)
-  m_TagString: Untagged
+  m_TagString: Pocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1433,7 +1464,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1794901381}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -1503,19 +1534,6 @@ Transform:
   m_Father: {fileID: 1590535782}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1794901387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794901381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2419f456f878032419b50f2eb8dd3d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreGT: {fileID: 562610884}
 --- !u!1 &1802305790
 GameObject:
   m_ObjectHideFlags: 0
